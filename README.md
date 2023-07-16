@@ -1,10 +1,47 @@
-# Getting Started with Create React App
+# File Uploader React Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The FileUploader is a React component designed to facilitate the upload and display of e-bill PDFs. Users can select and upload PDF files, view a preview of the selected file, and manage the uploaded files, including viewing and deleting them.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+Upload PDF Files: Users can select a PDF file from their device using a file input, and the component will validate and allow uploading valid PDF files.
+
+Preview: The component displays a preview of the selected PDF file before uploading. This allows users to ensure they have selected the correct file.
+
+Display Uploaded Files: Once files are uploaded, a list of the uploaded files will be shown with options to view the PDF and delete the uploaded files.
+
+Validation: The component validates the selected files to ensure they are in PDF format before proceeding with the upload process.
+
+## Usage
+
+To run this App in your system follow these steps:
+
+### Clone this project
+
+To clone this project type this below code in the terminal
+
+git clone https://github.com/uttamkamar/pdf-uploader
+
+### Dependencies
+
+The component relies on the following dependencies:
+
+React: ^16.8.0 or higher
+react-icons: ^4.2.0 or higher
+
+To add these Dependencies run this followin command in the terminal
+
+npm i
+
+## How It Works
+
+The user selects a PDF file using the file input, and the component validates the file type to ensure it is a PDF.
+
+If a valid PDF file is selected, the user can click the "Upload" button to initiate the upload process.
+
+If the selected PDF file is successfully uploaded, it will be added to the list of uploaded files, and the user will be able to view the PDF preview and delete the uploaded file.
+
+If an invalid or duplicate file is selected, appropriate error messages will be displayed to the user.
 
 ### `npm start`
 
@@ -13,11 +50,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -29,42 +61,18 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Styling
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The component relies on the App.css file for styling. You can customize the styling according to your application's design requirements by modifying the styles in that file.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Note
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The component uses a simulated API request to showcase the file upload process. In a real-world scenario, you would replace this simulated API request with actual API calls to save the uploaded files on the server.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Credits
 
-## Learn More
+This FileUploader component was created by uttam and is distributed under the MIT License. Feel free to use, modify, and distribute it as you see fit.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+We hope you find this app useful for handling e-bill PDF uploads in your React application! If you have any questions or need further assistance, please don't hesitate to reach out.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy coding! 🚀
