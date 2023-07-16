@@ -2,6 +2,10 @@
 
 The FileUploader is a React component designed to facilitate the upload and display of e-bill PDFs. Users can select and upload PDF files, view a preview of the selected file, and manage the uploaded files, including viewing and deleting them.
 
+## Live Link
+
+https://digitaluttam.com/pdf-uploader/
+
 ## Features
 
 Upload PDF Files: Users can select a PDF file from their device using a file input, and the component will validate and allow uploading valid PDF files.
